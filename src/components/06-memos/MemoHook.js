@@ -16,6 +16,7 @@ export const MemoHook = () => {
         return `iterations ${ iterations } `;
     };
 
+    //enviar funcion con el parametro y array con los objetos (dependencias)
     const memoProcess = useMemo( () => Process( counter ), [ counter ]);
 
     return (

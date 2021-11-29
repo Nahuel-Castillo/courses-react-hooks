@@ -20,6 +20,7 @@ export const TodoApp = () => {
     }, [todos]);
 
     const handleToggle = ( todoId ) => {
+        //recibe action object
         dispatch({
             type: 'toggle',
             payload: todoId
